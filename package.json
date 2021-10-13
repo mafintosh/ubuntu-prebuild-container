@@ -7,7 +7,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "ubuntu-dev-container": "./bin.sh"
+    "ubuntu-prebuild-container": "./bin.sh"
   },
   "scripts": {
     "install": "mkcontainer"
