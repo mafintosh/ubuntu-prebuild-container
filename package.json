@@ -1,0 +1,22 @@
+{
+  "name": "ubuntu-prebuild-container",
+  "version": "0.0.0",
+  "description": "My dev container for building prebuilds for linux, so the link against an old libc etc.",
+  "dependencies": {
+    "mkcontainer": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install": "mkcontainer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/ubuntu-prebuild-container.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/ubuntu-prebuild-container/issues"
+  },
+  "homepage": "https://github.com/mafintosh/ubuntu-prebuild-container"
+}
