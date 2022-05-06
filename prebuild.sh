@@ -9,7 +9,7 @@ fi
 
 cd /home/ubuntu
 rm -rf repo
-git clone git://github.com/$1 repo
+git clone https://github.com/$1 repo
 cd repo
 
 if [ "$1" == "sodium-friends/sodium-native" ]; then
