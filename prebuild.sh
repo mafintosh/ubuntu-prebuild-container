@@ -14,7 +14,7 @@ cd repo
 
 if [ "$2" == "--musl" ]; then
   export CC=/usr/local/musl/bin/musl-gcc
-  PREBUILD_ARGS="--tag-libc $PREBUILD_ARGS"
+  PREBUILD_ARGS="--tag-libc --libc=musl $PREBUILD_ARGS"
 fi
 
 if [ "$1" == "sodium-friends/sodium-native" ]; then
