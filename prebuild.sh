@@ -13,7 +13,7 @@ git clone https://github.com/$1 repo
 cd repo
 
 if [ "$2" == "--musl" ]; then
-  export CC=musl-gcc
+  export CC=/usr/local/musl/bin/musl-gcc
   PREBUILD_ARGS="--tag-libc $PREBUILD_ARGS"
 fi
 
