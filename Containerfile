@@ -9,9 +9,9 @@ RUN apt-get update
 RUN apt-get install -y git vim curl build-essential wget bash-completion screen man libtool \
   autoconf automake python help2man python-setuptools python3
 RUN cd /tmp/ && curl -fs https://musl.libc.org/releases/musl-1.2.3.tar.gz | tar x \
-  && cd musl-1.2.3
-  && ./configure
-  && make
+  && cd musl-1.2.3 \
+  && ./configure \
+  && make \
   && make install
 RUN curl -fs https://raw.githubusercontent.com/mafintosh/node-install/master/install | sh \
   && node-install 16
