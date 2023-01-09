@@ -26,7 +26,7 @@ if [ "$1" == "mafintosh/utp-native" ]; then
 fi
 
 npm install
-npm run prebuild $PREBUILD_ARGS
+npm run prebuild -- $PREBUILD_ARGS
 
 mkdir -p /home/ubuntu/out/$1
 cp -r prebuilds /home/ubuntu/out/$1/
