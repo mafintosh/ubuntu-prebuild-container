@@ -3,4 +3,4 @@ OUT=$(pwd)/prebuilds
 
 cd "$DIRNAME"
 mkdir -p "$OUT"
-make run ARGV=$1 BIND="--bind $OUT:/home/ubuntu/out"
+make run ARGV="$1 $2" BIND="--bind $OUT:/home/ubuntu/out"
