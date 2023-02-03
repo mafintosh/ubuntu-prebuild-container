@@ -1,6 +1,6 @@
 {
   "name": "ubuntu-prebuild-container",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "My dev container for building prebuilds for linux, so the link against an old libc etc.",
   "dependencies": {
     "mkcontainer": "^1.8.3"
