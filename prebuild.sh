@@ -26,6 +26,7 @@ if [ "$1" == "mafintosh/utp-native" ]; then
 fi
 
 if [ -f ".gitmodules" ]; then
+  git config --local url.https://github.com/.insteadOf ssh://git@github.com:
   git submodule update --init
 fi
 
