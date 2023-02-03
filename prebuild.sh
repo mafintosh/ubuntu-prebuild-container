@@ -25,6 +25,10 @@ if [ "$1" == "mafintosh/utp-native" ]; then
   npm run fetch-libutp
 fi
 
+if [ -f ".gitmodules" ]; then
+  git submodule update --init
+fi
+
 npm install
 npm run prebuild -- $PREBUILD_ARGS
 
