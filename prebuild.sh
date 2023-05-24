@@ -17,14 +17,6 @@ if [ "$2" == "--musl" ]; then
   PREBUILD_ARGS="--tag-libc --libc=musl $PREBUILD_ARGS"
 fi
 
-if [ "$1" == "sodium-friends/sodium-native" ]; then
-  ./deps/bin.js # just for nicer output, npm install calls this also
-fi
-
-if [ "$1" == "mafintosh/utp-native" ]; then
-  npm run fetch-libutp
-fi
-
 if [ -f ".gitmodules" ]; then
   git config --local url.https://github.com/.insteadOf ssh://git@github.com:
   git submodule update --init
